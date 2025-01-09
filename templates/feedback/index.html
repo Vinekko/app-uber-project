@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retroalimentación del Conductor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Retroalimentación del Conductor</h1>
+            <form>
+                <div class="input-group">
+                    <label for="rating">Calificación:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="1">1 - Muy Malo</option>
+                        <option value="2">2 - Malo</option>
+                        <option value="3">3 - Regular</option>
+                        <option value="4">4 - Bueno</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="comments">Comentarios:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar Retroalimentación</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
