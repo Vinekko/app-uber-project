@@ -14,7 +14,7 @@ def index(request):
     return render(request, 'login/index.html')
 
 def index(request):
-    return render(request, 'nav/index.html')
+    return render(request, 'nav/nav.html')
 
 def index(request):
     return render(request, 'pedido/index.html')
@@ -28,5 +28,5 @@ def index(request):
 def index(request):
     return render(request, 'finalizarV/index.html')
 
-def index(request):
-    return render(request, 'viaje/index.html')
+def viaje(request):
+    return render(request, 'viaje/viaje.html')

@@ -1,6 +1,6 @@
 from django.urls import path, include
-from .views import index
+from .views import index, viaje
 
 urlpatterns = [
-  path("", index, name="index")
+  path("viaje", viaje, name="viaje"),
 ]
