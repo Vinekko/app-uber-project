@@ -11,7 +11,7 @@ def index(request):
     return render(request, 'historialV/index.html')
 
 def login(request):
-    return render(request, 'login/index.html')
+    return render(request, 'login/login.html')
 
 def index(request):
     return render(request, 'nav/nav.html')
