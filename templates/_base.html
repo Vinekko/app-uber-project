@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Taxi Amigable</title>
+</head>
+<body class="font-roboto bg-gradient-to-r from-blue-400 to-purple-500 flex justify-center items-center h-screen m-0">
+  <nav class="fixed top-0 left-0 w-full bg-blue-700 text-white px-4 py-2 flex justify-between items-center">
+
+    <ul class="flex space-x-4">
+      <li><a href="#" class="hover:text-gray-200">Viajes</a></li>
+      <li><a href="#" class="hover:text-gray-200">Historial</a></li>
+      <li><a href="#" class="hover:text-gray-200">Cuenta</a></li>
+      <li><a href="#" class="hover:text-gray-200">Notificacion</a></li>
+    </ul>
+  </nav>
+  {% block content %}
+
+  {% endblock content %}
+</body>
+</html>

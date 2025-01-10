@@ -1,0 +1,77 @@
+{% extends "_base.html" %}
+<style>
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+    
+    .form-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        color: #333333;
+    }
+    
+    p {
+        margin-bottom: 30px;
+        color: #666666;
+    }
+    
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .button {
+        display: inline-block;
+        padding: 15px;
+        background-color: #8e44ad;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+        background-color: #732d91;
+    }
+    
+</style>
+
+    <div class="container">
+        <div class="form-container">
+            <h1>Bienvenido</h1>
+            <p>Elige una opción para continuar</p>
+            <div class="button-group">
+                <a href="request_ride.html" class="button">Solicitar Viaje</a>
+                
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
