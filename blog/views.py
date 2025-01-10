@@ -10,7 +10,7 @@ def index(request):
 def index(request):
     return render(request, 'historialV/index.html')
 
-def index(request):
+def login(request):
     return render(request, 'login/index.html')
 
 def index(request):
