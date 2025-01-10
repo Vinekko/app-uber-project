@@ -4,17 +4,20 @@ from django.db import models
 
 class Client(models.Model):
     name = models.CharField(max_length=200)
-
-    lastname = models.CharField(max_length=200)
-    cedula = models.CharField(max_length=9, unique=True)
     is_driver = models.BooleanField(default=False)
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=200)
 
     def str(self):
         return f"{self.name} {self.lastname}"
+  
 
+class Historial(models.Model):
+    distancia = models.FloatField(max_length=200)
+    destino = models.CharField(max_length=200)
 
+    def str(self):
+        return f"{self.name} {self.lastname}"
 
 class Driver(models.Model):
     car_model = models.CharField(max_length=200)
@@ -25,3 +28,4 @@ class Driver(models.Model):
 
     def str(self):
         return f"{self.client.name} {self.client.lastname}"
+    
