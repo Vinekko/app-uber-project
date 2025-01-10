@@ -4,3 +4,4 @@ from .models import *
 
 admin.site.register(Client)
 admin.site.register(Driver)
+admin.site.register(Historial)
